@@ -1,0 +1,51 @@
+
+
+canvas { 
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.header{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    text-shadow: -3px -3px 5px rgb(129, 150, 135);
+}
+
+
+.grids {
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    z-index: 3;
+    position: absolute;
+    margin: 0px auto;
+    display: grid;
+    grid-template-rows: repeat(20, 5vh); 
+    grid-template-columns: repeat(auto-fit, minmax(75px,1fr));
+    
+}
+
+.btn-gradient-1 {
+    border-width: 4px;
+    color: white;
+    border-style: solid;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+    border-radius: 5%;
+    background-color: var(--dark-bg);
+    text-align: center;
+    text-decoration: none;
+}
+
+.hover:hover{
+    color: #000;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+footer{
+    z-index: 10;
+    grid-row-start: 20;
+    background-color: rgba(0, 0, 0, 0.74);
+}

@@ -1,0 +1,16 @@
+extends pages 
+block content 
+  body.gridspages
+    header.cardpages.card-wide
+      h1.h1 Thank you &#128150
+    div.cardpages.normalText.card-wide Thanks a million,
+      p.h1=fname 
+    if ischecked
+      div.cardpages.card-wide.card-tall
+        img.thanksimg(src='../images/drake-happy.gif' alt='drake happy')
+    else
+      div.cardpages.card-wide.card-tall
+        img.thanksimg(src='../images/drake-outraged.gif' alt='drake outraged')
+    div.cardpages.normalText.card-wide.card-short.h1= status 
+  include footer
+

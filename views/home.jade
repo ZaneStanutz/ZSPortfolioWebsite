@@ -1,0 +1,89 @@
+extends layout
+
+block content
+  body.grids
+    main#explore.grids 
+      header#welcome.card
+        h1.header Zane Stanutz
+        p.normalText Aspiring developer
+        p.normalText Please scroll ↓
+      #about.card
+        | Hello! I am a recent graduate of  triOS college of technology with
+        | a specialization in App development. I have been lucky to receive top notch training from class A instructors
+        | in many industry standard web technologies such as iOS, Android ,Node.js, JSP , Django and .NET core. I have enjoyed my time at the college
+        | and am now excited to get into the workforce so I can soak up even more knowlege!
+      #portfolio.card
+        h2.header Portfolio
+        p.normalText &#8601; Visit my portfolio pages! &#8600; 
+      a#designbtn.header.btn-gradient-1.hover(href='/design') Design
+      a#codebtn.header.btn-gradient-1.hover(href='/code') Code 
+      #published.card
+        h2.header Published Apps
+        table.table.table-hover.table-dark
+          tbody
+            tr
+              th
+                | App type
+              th
+                | Description
+              th
+                | App link
+            tr
+              td .Net5 webApp
+              td ask an AI existential questions
+              td
+                a(href='https://zzonawav.com' target='_blank') zzonawav.com
+            tr
+              td Android app
+              td please dowload my personal app
+              td
+                a(href='')
+                  i Google Play Store content comming soon
+            tr
+              td iOS app 
+              td please download my personal app
+              td
+                a(href='')
+                  i Apple Store content comming soon
+      #contact.card
+        h2.header Please contact me
+        form(action='home' method='post')
+          .form-group
+            label(for='exampleInputEmail1') Email Address:
+            br
+            input(type='email' placeholder=' Enter email' name='contactEmail' required='')
+            br
+            small#emailHelp.form-text.text-muted so I can respond to your message.
+          br
+          .form-group
+            label(for='exampleInputName1') Name:
+            input#exampleInputName1.form-control(type='text' cols='5' placeholder='Enter first name' name='firstName' required='' style='max-width: 65%;')
+          .form-group
+            label(for='contactMessage') Message:
+            br
+            textarea(type='textarea' name='contactMessage' placeholder='Enter your message' rows='3' cols='35')
+          .form-check
+            input#exampleCheck1.form-check-input(type='checkbox' name='isChecked')
+            label.form-check-label(for='exampleCheck1') Check to be added to my email list!
+          button.header.btn-gradient-1.hover(type='submit') Submit
+      #friends.card
+        h2.header Please send a message!
+        p I am lacking in the friends department!
+        p
+      #connect.card
+        h2.header I follow back!
+        p
+          | Thanks a million for visiting me here.
+          | Please follow me on social media to stay in touch.
+      #socials.card
+        a.social(href="https://github.com/ZaneStanutz" target="_blank")
+          img(src="/images/github2.svg", alt="github")
+        a.social(href="https://twitter.com/zanedev_zane" target="_blank")
+          img(src='/images/twitter.svg' alt='twitter')
+        a.social(href="https://www.linkedin.com/in/zane-stanutz-24018b219/" target="_blank")
+          img(src='/images/linkedin.svg' alt='LinkedIn')
+    footer.card
+      button#exploreBtn.header.btn-gradient-1.hover explore
+    canvas#bg
+    script(type='module' src='javascripts/main.js') 
+

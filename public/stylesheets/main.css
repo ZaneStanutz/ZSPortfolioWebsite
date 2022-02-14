@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500;700&display=swap');
+
+canvas { 
+    position:fixed;
+    top: 0;
+    left: 0;
+    
+}
+:root {
+    --dark-bg: rgba(15, 15, 15, 0.95);
+
+}
+
+.grids {
+    width: 100vw;
+    color: white;
+    z-index: 3;
+    position: absolute;
+    margin: 0px auto;
+    display: grid;
+    grid-template-rows: repeat(25, 20vh); 
+    grid-template-columns: repeat(auto-fit, minmax(75px,1fr));
+    
+}
+
+div{
+    font-family: 'Roboto Mono', monospace;
+
+}
+.header{
+
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    text-shadow: -3px -3px 5px rgb(129, 150, 135);
+}
+
+.normalText{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+}
+header {
+    background: var(--dark-bg);
+    text-align: center;
+    text-shadow: -3px -3px 2px rgb(53, 53, 53);
+    border-radius: 5%;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 5;
+      
+}
+h1{
+    font-size: 4em;
+
+}
+#about {
+    background: var(--dark-bg);
+    padding: 5%;
+    grid-row-start: 8;
+    grid-row-end: 9;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    min-height: 200px;
+
+}
+#portfolio{
+    background: var(--dark-bg);
+    grid-row-start: 10;
+    grid-row-end: 11;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    text-align: center;
+    
+    
+}
+#designbtn{
+    grid-row-start: 11;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 2%;
+    max-height: 50px;
+    padding: 0.5em;
+
+}
+#codebtn{
+    grid-row-start: 11;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    margin: 2%;
+    max-height: 50px;
+    padding: 0.5em;
+}
+.btn-gradient-1 {
+    border-width: 4px;
+    color: white;
+    border-style: solid;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+    border-radius: 5%;
+    background-color: var(--dark-bg);
+    text-align: center;
+    text-decoration: none;
+}
+    
+
+#published {
+    background: var(--dark-bg);
+    border-radius: 5%;
+    grid-row-start: 13;
+    grid-row-end: 15;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    text-align: center;  
+    font-size: 1.2rem; 
+}
+
+#contact{
+    text-align: left;
+    background: var(--dark-bg);
+    grid-row-start: 17;
+    grid-row-end: 20;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-left: 2%;
+
+}
+#friends{
+    text-align: center;
+    background: var(--dark-bg);
+    grid-row-start:17;
+    grid-row-end: 19;
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+#connect{
+    background: var(--dark-bg);
+    grid-row-start: 22;
+    grid-row-end: 24;
+    grid-column-start: 2;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#socials{
+    grid-row-start: 22;
+    grid-row-end: 24;
+    grid-column-start: 5; 
+    grid-column-end: 6;  
+}
+.social{
+    margin-top: 2%;
+    border-width: 4px;
+    border: #000;
+}
+.social > img{
+    width: 75px;
+    height: 75px;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 8px;
+    margin: 8px;
+    
+}
+.social:hover{
+    background: 
+        linear-gradient(to right, darkblue, darkorchid)
+        border-box;
+    border-radius: 25px;
+    border-width: 5px;
+    border-style: solid;
+
+}
+footer {
+    grid-row-start: 26; 
+    z-index: 8;
+}
+.hover:hover{
+    color: #000;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 915px){
+    header{
+        grid-column: 1/7;
+
+    }
+    #about{
+        grid-column: 1/7;
+        grid-row-start: 7;
+        grid-row-end: 9;
+    }
+    #portfolio{
+        grid-column: 1/7;
+    }
+    #designbtn{
+        grid-column-start: 1;
+
+    }
+    #codebtn{
+        grid-column-start:5;
+        grid-column-end: 7;
+    }
+    #published{
+        grid-column: 1/7;
+        grid-row-start: 12;
+        grid-row-end: 15;
+
+    } 
+    #friends{
+        grid-row-start:16;
+        grid-row-end: 17;
+        grid-column: 2/6; 
+    }
+    #contact{
+        
+        grid-row-start: 18;
+        grid-row-end: 21;
+        grid-column: 2/6;
+
+    }
+    #connect{
+        grid-row-start: 22;
+        grid-row-end: 23;
+        grid-column: 1/7;
+
+    }
+    #socials{
+        grid-row-start: 23;
+        grid-row-end: 26;
+        grid-column: 1/7;
+        min-height: 200px;
+    }
+   
+} 
+
+@media screen and (max-width: 540px){
+    #about{
+        grid-column: 1/7;
+        grid-row-start: 6;
+        grid-row-end: 9;
+    }
+    #codebtn{
+        grid-column-start:4;
+        grid-column-end: 7;
+    }
+
+    #friends{
+        grid-row-start:16;
+        grid-row-end: 17;
+        grid-column: 1/6; 
+    }
+
+    #contact{
+        
+        grid-row-start: 18;
+        grid-row-end: 21;
+        grid-column: 1/6;
+
+    }
+
+}
+

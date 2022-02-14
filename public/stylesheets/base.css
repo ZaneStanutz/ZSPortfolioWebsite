@@ -1,0 +1,13 @@
+.card {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-bg);
+    color: #fff;
+    box-shadow: rgba(15, 42, 78, 0.192) 0px 0.15rem 0.5rem, rgba(15, 15, 15, 0.103) 0px 0.075rem 0.175rem;
+    border-radius: 4px;
+    transition: all 500ms;
+    overflow: hidden;  
+}
+
