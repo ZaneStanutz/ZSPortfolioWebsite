@@ -2,18 +2,44 @@ extends pages
 block content 
   body.gridspages
     h1.cardpages.card-wide.h1 Code &#128187
-    div.cardpages.card-wide.card-tall(style='background-image: url(../images/zzonawavedit.png);' )
+    video(src="../appvideos/zzonawavandroid.mp4" controls).cardpages.card-wide.card-tall#zzonwavandroid
     div.cardpages.card-wide.card-tall(style='padding: 3%;')
-      h2.h1 ZzOnAwav App
+      h2.h1 zzonawav Android 
       br
-      p.normalText This app was created in Android studio. Provides reliable two way user verification via sms using java async task, delievers files to the user via direct download from proxy server. 
+      p.normalText This app was created in Android studio. Provides two way user verification via sms, delievers audio files to the user via direct download from proxy server. 
       a(href="https://github.com/ZaneStanutz/zzonawav" target="_blank") 
         button.normalText.btn-gradient-1 < code />
-    div.cardpages.card-wide.card-tall(style='background-image: url(../images/myabstractlifeedit.png);' )
+    video(src="../appvideos/zzonawavios.mp4" controls).cardpages.card-wide.card-tall#zzonawavios
     div.cardpages.card-wide.card-tall(style='padding: 3%;') 
-      h2.h1 My Abstact Life App
+      h2.h1 zzonawav iOS
+      br
+      p.normalText This app was created in Xcode. Uses a node express API to create and validate user accounts in MongoDB.
+      a(href="https://github.com/ZaneStanutz/zzonawavApi_iOS" target="_blank") 
+        button.normalText.btn-gradient-1 < code />
+    video(src="../appvideos/myabstractlife.mp4" controls).cardpages.card-wide.card-tall#myabstractlife
+    div.cardpages.card-wide.card-tall(style='padding: 3%;') 
+      h2.h1 My Abstact Life
       br
       p.normalText This app was created in Android studio. Utilizes Java Native Interface to perform a calculation in C++ resulting in total seconds the user has been alive.
       a(href="https://github.com/ZaneStanutz/MyAbstractLife" target="_blank") 
         button.normalText.btn-gradient-1 < code />
+    video(src="../appvideos/spacestagram.mp4" controls).cardpages.card-wide.card-tall#spacestagram
+    div.cardpages.card-wide.card-tall(style='padding: 3%;')
+      h2.h1 Spacestagram
+      br
+      p.normalText This app was created in React, it uses Nasa's pic of the day API to dynamically render cool space pictures.
+      a(href="https://ubiquitous-fairy-ed5474.netlify.app/" target="_blank")
+        button.normalText.btn-gradient-1 spacestagram
+      br
+      a(href="https://github.com/ZaneStanutz/spacestagram" target="_blank") 
+        button.normalText.btn-gradient-1 < code />
+      br
+    video(src="../appvideos/speaktotheorca.mp4" controls).cardpages.card-wide.card-tall#speaktotheorca
+    div.cardpages.card-wide.card-tall(style='padding: 3%;') 
+      h2.h1 Speak to the Orca
+      br
+      p.normalText This app was created in .NET 5. Ask the most sophisticated language based AI in the world existential questions.
+      a(href="https://www.zzonawav.com" target="_blank") 
+        button.normalText.btn-gradient-1 Speak to the Orca
+  
   include footer
